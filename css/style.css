@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Noto+Sans&family=Open+Sans&family=Sen&display=swap');
+
+:root {
+    font-size: 18px;
+    font-family: 'Lato', sans-serif;
+    color: #323232;
+}
+
+a {
+    text-decoration: none;
+    color: #323232
+}
+
+#navbar {
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+    height: 100%;
+    position: fixed;
+    padding: 1rem;
+    box-sizing: border-box;
+}
+
+#navbar header {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+}
+
+#navbar ul {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: auto;
+    height: 100%;
+    justify-content: space-between;
+    padding-left: 1rem;
+}
+
+#main-doc {
+    position: absolute;
+    left: 20%;
+    padding: 1rem 1rem 1rem 0;
+}
+
+header {
+    font-weight: bold;
+    font-size: 1.5rem;
+    color: rgb(14, 14, 14);
+}
+
+article {
+    margin-bottom: 2rem;
+}
+
+code {
+    display: block;
+    background-color: #f4f4f4;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+    padding: 1rem;
+    line-height: 2;
+    overflow: auto;
+    font-size: 0.8rem;
+}
+
+pre {
+    white-space: pre;
+}
+
+
+@media (max-width: 1024px) {
+    #navbar {
+        display: none;
+    }
+
+    #main-doc {
+        position: absolute;
+        left: 5%;
+        right: 5%;
+        padding: 1rem 1rem 1rem 0;
+    }
+
+}
